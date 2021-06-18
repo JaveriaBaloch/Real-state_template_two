@@ -1,0 +1,1770 @@
+//color scheme
+$bg11:rgb(255, 0, 76);
+$bg12:crimson;
+$bg13:rgb(235, 12, 86);
+$bg21:#295dfa;
+$bg22:#4473ff;
+$bg31:rgb(247, 183, 183);
+$bg32:#ffe6af;
+$bg2:#6574bf;
+$bg3:#ad0675;
+$bg4:#ec5519;
+$bggreen:rgb(0, 128, 96);
+$bggreenlight:rgb(115, 255, 201);
+$bgblue:rgb(4, 4, 168);
+$bgbluelight:rgb(143, 143, 255);
+
+$bgattachment1:rgba(44, 0, 38,0.9);
+$bgattachment2:rgba(3, 3, 46, 0.75);
+$bgattachment3:rgba(1, 60, 63, 0.75);
+
+$bgattachment4:rgba(34, 3, 99, 0.75);
+$bodyqoutes:'Yatra One', cursive;
+$logo:'Monoton', cursive;
+$heading:'Bungee Inline', cursive;
+$bodytext:'Marcellus SC', serif;
+$subheading:'Luckiest Guy', cursive;
+@media print{
+    @page{
+    body{
+        user-select: none !important;
+        overflow-x: hidden;
+    }
+    .bodyquotes{
+        font-family: $bodyqoutes;
+    }
+    .logo{
+        font-family: $logo;
+    }
+    .heading{
+        font-family: $heading;
+        font-size: 5rem;
+    }
+    .btext{
+        font-family: $bodytext;
+        font-size: 18px;
+    }
+    .subheading{
+        font-family: $subheading;
+        letter-spacing: 6px;
+    }
+    .bg1{
+        background-color: $bg12;
+        &text{
+            color: $bg12;
+        }
+        .-btn{
+            background-color: $bg12;
+            color: white;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+    .bg2{
+        background-color: $bg2;
+        &text{
+            color: $bg2;
+        }
+        .-btn{
+            background-color: $bg2;
+            color: white;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+    .bg3{
+        background-color: $bg3;
+        &text{
+            color: $bg3;
+        }
+        .-btn{
+            background-color: $bg3;
+            color: white;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+    .border-bg3{
+        border: 3px solid $bg3 !important;
+    }
+    .bg4{
+        background-color: $bg4;
+        &text{
+            color: $bg4;
+        }
+        .-btn{
+            background-color: $bg4;
+            color: white;
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+    }
+    
+    
+    
+    .bgnav1{
+         background:linear-gradient($bg21 25%,$bg22 50%);
+        transition: all 2s;
+        transform: scaleX(1);
+        transform-origin: left;
+        &:hover{
+            opacity: 0.95;
+            transform: scaleX(2);
+            span{
+                display: block;
+            }
+        }
+    }
+    //navbg
+    #nav{
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .navbg{
+        // position:fixed;
+        top:0;
+        left:0;
+        z-index: 2;
+        width: 100%;
+        background: linear-gradient(to right, $bg11 45%, rgb(0, 84, 179) 80%);
+        font-size: 2rem;
+        box-shadow: #14558a 1px 2px 8px;
+        a{
+            text-decoration: none;
+            color: rgb(175, 255, 248);
+            font-family: $logo;
+        }
+      }
+      .user {
+          img{
+              width: 5rem !important;
+          }
+      }
+      //sidenav
+      
+      #one{
+        position: relative;
+    }
+    #k{
+        border-radius: 4px;
+        position: relative;
+        text-decoration: none;
+        transition: all 0.5s;
+        &:hover{
+            padding: 2rem;
+        }
+        &:focus{
+            background: linear-gradient(to right, rgb(133, 0, 115) 25%,rgb(185, 4, 131)50%);
+        }
+        &::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 3%;
+    height: 100%;
+    transform: scaleX(0);
+    background: linear-gradient(to right, rgb(133, 0, 115) 25%,rgb(185, 4, 131)50%);
+    box-shadow: #888aff 0px 1px 14px 7px; 
+    transition: all 1s;
+    transform-origin: left;
+    border-radius: 50px;
+    
+        }
+        &:hover{
+    
+            .bg1text{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+            &::before{
+                width: 100%;
+                transform: scaleX(1);
+                z-index: -2;
+              
+            }
+            
+        }
+    }
+    
+    .fixed{
+        position: fixed;
+        z-index: 7;
+        background: linear-gradient(to right, $bg31 45%, $bg32 80%) ;
+        padding: 1rem;
+     transition: all 1s;
+     transform-origin: left;
+     transform: scaleX(1);
+     box-shadow: #8a1449 1px 3px 8px; 
+    
+        &:hover{
+            box-shadow: #14728a 1px 3px 8px; 
+          transform: scaleX(1.3);
+            #sidenav{
+                position: relative;
+                
+                .navitem{
+                    span{
+                        display:initial;
+                        text-decoration: none;
+                    }
+                }
+            
+           
+        }
+    }
+        #sidenav{
+            position: relative;
+            .navitem{
+                span{
+                    display: none;
+                }
+            }
+        }
+    
+           
+        }
+    
+    .overview{
+        margin-left: 4.5rem;
+        img{
+            height: 13rem;
+        }
+    }
+    //home
+    .bg-shadow-red{
+        position: relative;
+        background-color: $bg31;
+        text-align: left;
+        color:$bg12;
+        border: $bg11 3px solid;
+        border-radius: 25px;
+        border-top-left-radius: 0px;
+        box-shadow: #8a1449 1px 3px 8px;
+        transition: all 0.4s;
+        &:hover{
+            img{
+                transition: all 1s;
+                transform: rotate(-27deg);
+                &:hover{
+                    transform: scale(2);
+                    z-index: 2;
+                   
+                }
+            }
+        }
+    }
+    ////bg1-attachment
+    .bg1-attached{
+        background:linear-gradient(to right, $bgattachment1 45%, $bgattachment2 80%), url(../img/hotel5.jpg);
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        #btn{
+            position: relative;
+            background: none;
+            border: white 2px solid;
+          border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0;
+        &::before{
+            border-radius: 2px;
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 2s;
+          z-index: -2;
+        }
+        &:hover::before,&:focus{
+    
+            transform: scaleX(1);
+            box-shadow: yellow 0px 3px 8px 2px ;
+            background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+            width: 100%;
+         
+        }
+        }
+    }
+    ///services
+    .border-primary{
+        border-width: 3px;
+    }
+    #Services,#Reviews,#Contact,#Teaming{
+        width: 80%;
+    }
+    #ser{.card{
+        position: relative;
+        z-index: 0;
+        transition: all 1s;
+           &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: all 1s;
+            background:linear-gradient(to top right, rgb(46, 0, 131) 45%,rgb(92, 1, 87)90%);
+            z-index: -1;
+           }
+           &:hover{
+            h4,p{
+                color: white;
+            }
+            &::before{
+                width: 100%;
+                transform: scaleY(1);
+            }
+           }
+    
+        
+    }
+    
+    }
+    #join{
+        background:linear-gradient(to right,  rgb(20, 240, 148)30%,rgb(238, 59, 143)59%,rgb(8, 5, 211)80%);
+        padding: 1rem 3.5rem;
+        border-radius: 8px;
+        position: relative;
+        z-index: 0;
+        transition: all 1s;
+        &::before{
+            position: absolute;
+            content: "";
+            border-radius: 8px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: all 1s;
+            background:linear-gradient(to right,  rgb(20, 214, 240)30%,rgb(92, 59, 238)59%,rgb(190, 211, 5)80%);
+            z-index: -1;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }
+    }
+    #join{
+        .card{
+       
+        position: relative;
+        z-index: 0;
+        transition: all 1s;
+        &::before{
+            position: absolute;
+            content: "";
+          
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 1s;
+            background:linear-gradient(to right, rgb(125, 80, 248) 35%,rgb(160, 0, 147)90%);
+            z-index: -1;
+    }
+    &:hover{
+        color: goldenrod;
+    }
+    &:hover::before{
+        transform: scaleX(1);
+    }}
+    }
+    
+    .bg2-attached{
+        background:linear-gradient(to right, $bgattachment3 45%, $bgattachment4 80%), url(../img/house3.jpg);
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        #btn{
+            position: relative;
+            background: none;
+            border: white 2px solid;
+          border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0;
+        &::before{
+            border-radius: 2px;
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 1s;
+          z-index: -2;
+        }
+        &:hover::before,&:focus{
+    
+            transform: scaleX(1);
+            box-shadow: yellow 0px 3px 8px 2px ;
+            background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+            width: 100%;
+         
+        }
+        }}
+        //Architects
+        .bg3-attached{
+            background:linear-gradient(to right, $bgattachment1 45%, $bgattachment2 80%), url(../img/new\ york.jpg);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            #btn{
+                position: relative;
+                background: none;
+                border: white 2px solid;
+              border-radius: 5px;
+            color: white;
+            font-size: 1.5rem;
+            z-index: 0;
+            &::before{
+                border-radius: 2px;
+                position: absolute;
+                content: " ";
+                top: 0;
+                left: 0;
+                width: 3px;
+                height: 100%;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: all 1s;
+              z-index: -2;
+            }
+            &:hover::before,&:focus{
+        
+                transform: scaleX(1);
+                box-shadow: yellow 0px 3px 8px 2px ;
+                background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+                width: 100%;
+             
+            }
+            }}
+            ///reviews
+            .bg-shadow-green{
+                
+                position: relative;
+                background-color: $bggreenlight;
+                text-align: left;
+                color:$bggreen;
+                border: $bggreen 3px solid;
+                border-radius: 25px;
+                border-top-right-radius: 0px;
+                box-shadow: $bggreen 1px 3px 8px;
+                transition: all 0.4s;
+                &:hover{
+                    img{
+                        transition: all 2s;
+                        transform: rotate(-19deg);
+                        &:hover{
+                            transform: scale(2);
+                            z-index: 2;
+                           
+                        }
+                    }
+                }
+            }
+            .bg-shadow-blue{
+                
+                position: relative;
+                background-color: $bgbluelight;
+                text-align: left;
+                color:$bgblue;
+                border: $bgblue 3px solid;
+                border-radius: 25px;
+                border-top-left-radius: 0px;
+                box-shadow: $bgblue 1px 3px 8px;
+                transition: all 0.4s;
+                &:hover{
+                    img{
+                        transition: all 2s;
+                        transform: rotate(-19deg);
+                        &:hover{
+                            transform: scale(2);
+                            z-index: 2;
+                           
+                        }
+                    }
+                }
+            }
+    #link{
+    color: rgb(211, 16, 123);
+    text-decoration: none;
+    font-family: $bodyqoutes;
+    text-shadow: $bg3 3px 1px 5px;
+    transition: all;
+    border-bottom: 2px rgb(211, 16, 123) solid;
+    &:hover,&:focus{
+        text-shadow: $bg3 3px 1px 5px;
+    animation-name: pulse;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+    }
+}
+    @keyframes pulse{
+        0%{
+            font-size: 16px;
+        }
+        50%{
+            font-size: 1.3rem;
+        }
+        100%{
+            font-size: 16px;
+        }
+    }
+    .img-reviewers{
+        img{
+            position: relative;
+            width: 3rem;
+            height: 3rem;
+            margin: 0;
+            padding: 0;
+            border-radius: 50%;
+            transition: all 1s;
+            z-index: 0;
+            &:hover{
+               
+               transform: scale(1.5);
+               z-index: 1;
+              
+            }
+        }
+        :nth-child(n+1){
+            margin-left: -1rem;
+           
+        }
+    }
+    .bg4-attached{
+        background:linear-gradient(to right, $bgattachment3 45%, $bgattachment4 80%), url(../img/hotel3.jpg);
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        #btn{
+            position: relative;
+            background: none;
+            border: white 2px solid;
+          border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0;
+        &::before{
+            border-radius: 2px;
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 2s;
+          z-index: -2;
+        }
+        &:hover::before,&:focus{
+    
+            transform: scaleX(1);
+            box-shadow: yellow 0px 3px 8px 2px ;
+            background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+            width: 100%;
+         
+        }
+        }}
+        ///contact
+        .in{
+           background: linear-gradient(to right,rgb(223, 157, 240) 5%, rgb(236, 132, 184) 25%,rgb(164, 243, 243)60%,rgb(236, 235, 162)85%);
+           
+        }
+    ///fixing links
+    #pk{
+        position: relative;
+        z-index: 7;
+    }
+    .pk{
+      
+        top: 0;
+        right:0;
+        justify-content: space-evenly;
+        padding: 20rem 0;
+        .bl{
+    
+            background-color: rgb(255, 183, 101);
+            padding: 0 0.7rem;
+            position: relative;
+            z-index: 10;
+    
+        &::before{
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(108, 226, 255);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: all 0.6s;
+        
+    
+        }
+         
+        
+              &:hover::before{
+                transform: scaleX(1);
+              
+                z-index: -1;
+              }
+              &:focus{
+                background-color: rgb(108, 226, 255);  
+              }
+          
+            
+        a{
+            margin-right: -0.3rem;
+            text-decoration: none;
+            font-family: $bodyqoutes;
+            padding: 2rem 0.6rem;
+            color: $bg3;
+            transform:translateX(-2rem);
+         
+        
+          
+        }}
+    }
+    .overview1{
+        margin-left: 3rem;
+    }
+      .bg-footer{
+      
+          background:linear-gradient(to left, rgb(116, 0, 77) 5%,rgb(0, 58, 134)50%,rgb(134, 98, 0)90%);
+      }
+    //scroll
+    /* width */
+    ::-webkit-scrollbar {
+        width: 17px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+       background :linear-gradient(to top, rgb(248, 83, 199) 5%,rgb(67, 247, 202)20%,rgb(113, 89, 250)50%,yellow 75%);
+     
+        border-radius: 0px;
+        &:hover{
+            box-shadow: crimson 1px 4px 16px 4px;
+        }
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background:linear-gradient(to top, rgb(253, 4, 170) 5%,rgb(3, 108, 245)50%,rgb(247, 182, 5)90%);
+     
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+          box-shadow: rgb(220, 20, 160) 1px 22px 67px 20px;
+        background:linear-gradient(to top, rgb(179, 1, 119) 5%,rgb(5, 99, 221)50%,rgb(194, 143, 4)90%);
+     
+      }
+    @media (max-width:1370px){
+        .overview{
+            margin-left: 0;
+           #imgs{
+               justify-content: center;
+           }
+            #img1,#img2,#img3,#img4{
+                height: 12rem;
+            width: 45rem;
+            }
+          
+        }
+    }
+    @media (max-width:1070px){
+        .overview{
+            margin-left: 0;
+           #imgs{
+               justify-content: center;
+           }
+            #img1,#img2,#img3{
+                height: 12rem;
+            width: 45rem;
+            }
+            #img4{
+                display: none;
+            }
+          
+        }
+    }
+      @media (max-width:800px){
+        body{
+            font-size: 120%;
+            .bodyquotes{
+                font-family: $bodyqoutes;
+                font-size: 70%;
+            }
+            .logotext{
+                font-family: $logo;
+                font-size: 1.5rem;
+            }
+            .heading{
+                font-family: $heading;
+                font-size: 4rem;
+            }
+            .btext{
+                font-family: $bodytext;
+                font-size: 12px;
+            }
+            .subheading{
+                font-family: $subheading;
+                letter-spacing: 4px;
+            }
+            .overview{
+                margin-left: 0;
+            }
+            #img1,#img2,#img3{
+                height: 11rem;
+            }
+            #img4{
+                display: none;
+            }
+            .img-fluid{
+                height:7rem;
+            }
+            #Services,#Reviews,#Contact,#Teaming{
+                width: 70%;
+            }
+            #Reviews,#Contact,#Teaming{
+                .img-fluid{
+                    height: 4rem;
+                    transform: scale(2,3.5);
+                    padding-bottom: 2rem;
+                }
+            }
+        }
+      }
+      @media (max-width:740px){
+        body{
+    
+            font-size: 70%;
+            .bodyquotes{
+                font-family: $bodyqoutes;
+                font-size: 50%;
+            }
+            .logotext{
+                font-family: $logo;
+                font-size: 1rem;
+            }
+            .heading{
+                font-family: $heading;
+                font-size: 2rem;
+            }
+            .btext{
+                font-family: $bodytext;
+                font-size: 10px;
+            }
+            .subheading{
+                font-family: $subheading;
+                letter-spacing: 3px;
+            }
+            .overview{
+                margin-left: 0;
+            }
+            #img1{
+                width: 100%;
+                height: 17rem;
+            }
+            #img4,#img3,#img2{
+                display: none;
+            }
+           .img-fluid{
+                height:7rem;
+            }
+            #Services,#Reviews,#Contact{
+                width: 80%;
+            }
+            #Reviews,#Contact,#Teaming{
+                .img-fluid{
+                    height: 4rem;
+                    transform: scale(2,3);
+                    padding-bottom: 2rem;
+                }
+            }
+            #pk{
+                margin-top: 4rem;
+            }
+        }
+      }
+      @media (max-width:450px){
+        body{
+            font-size: 70%;
+            .bodyquotes{
+                font-family: $bodyqoutes;
+             
+            }
+            .logotext{
+                font-family: $logo;
+                font-size: 1rem;
+            }
+            .heading{
+                font-family: $heading;
+                font-size: 2rem;
+            }
+            .btext{
+                font-family: $bodytext;
+                font-size: 10px;
+            }
+            .subheading{
+                font-family: $subheading;
+                letter-spacing: 3px;
+            }
+            .overview{
+                margin-left: 0;
+            }
+            #img1{
+                width: 100%;
+                height: 17rem;
+            }
+            #img4,#img3,#img2{
+                display: none;
+            }
+           .img-fluid{
+                height:7rem;
+            }
+            #Services,#Reviews,#Contact,#Teaming{
+                width: 15rem;
+            }
+            .bg3-attached {
+                .my{
+                    margin-left: 2rem;
+                    width: 13rem;
+                }
+            }
+            #join{
+                width: 15rem;
+                padding: 1rem;
+                .bg3text{
+                    font-size: 0.6rem;
+                    .fa{
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+            #Reviews,#Contact,#Teaming{
+                .img-fluid{
+                    height: 4rem;
+                    transform: scale(6,3);
+                    padding-bottom: 2rem;
+                }
+            }
+            #pk{
+                margin-top: 8rem;
+            }
+        }
+      }
+      html{
+          scroll-behavior: smooth;
+      }
+      #j{
+          position: relative;
+          z-index:0;
+          &:focus
+          {
+              position:relative;
+            z-index: -2;
+          }
+      }
+    #naving{
+        position: absolute;
+        z-index:67;
+    }
+}
+body{
+    user-select: none !important;
+    overflow-x: hidden;
+}
+.bodyquotes{
+    font-family: $bodyqoutes;
+}
+.logo{
+    font-family: $logo;
+}
+.heading{
+    font-family: $heading;
+    font-size: 5rem;
+}
+.btext{
+    font-family: $bodytext;
+    font-size: 18px;
+}
+.subheading{
+    font-family: $subheading;
+    letter-spacing: 6px;
+}
+.bg1{
+    background-color: $bg12;
+    &text{
+        color: $bg12;
+    }
+    .-btn{
+        background-color: $bg12;
+        color: white;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+.bg2{
+    background-color: $bg2;
+    &text{
+        color: $bg2;
+    }
+    .-btn{
+        background-color: $bg2;
+        color: white;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+.bg3{
+    background-color: $bg3;
+    &text{
+        color: $bg3;
+    }
+    .-btn{
+        background-color: $bg3;
+        color: white;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+.border-bg3{
+    border: 3px solid $bg3 !important;
+}
+.bg4{
+    background-color: $bg4;
+    &text{
+        color: $bg4;
+    }
+    .-btn{
+        background-color: $bg4;
+        color: white;
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+}
+
+
+
+.bgnav1{
+     background:linear-gradient($bg21 25%,$bg22 50%);
+    transition: all 2s;
+    transform: scaleX(1);
+    transform-origin: left;
+    &:hover{
+        opacity: 0.95;
+        transform: scaleX(2);
+        span{
+            display: block;
+        }
+    }
+}
+//navbg
+#nav{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.navbg{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 2;
+    width: 100%;
+    background: linear-gradient(to right, $bg11 45%, rgb(0, 84, 179) 80%);
+    font-size: 2rem;
+    box-shadow: #14558a 1px 2px 8px;
+    a{
+        text-decoration: none;
+        color: rgb(175, 255, 248);
+        font-family: $logo;
+    }
+  }
+  .user {
+      img{
+          width: 5rem !important;
+      }
+  }
+  //sidenav
+  
+  #one{
+    position: relative;
+}
+#k{
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s;
+    &:hover{
+        padding: 2rem;
+    }
+    &:focus{
+        background: linear-gradient(to right, rgb(133, 0, 115) 25%,rgb(185, 4, 131)50%);
+    }
+    &::before{
+position: absolute;
+content: "";
+top: 0;
+left: 0;
+width: 3%;
+height: 100%;
+transform: scaleX(0);
+background: linear-gradient(to right, rgb(133, 0, 115) 25%,rgb(185, 4, 131)50%);
+box-shadow: #888aff 0px 1px 14px 7px; 
+transition: all 1s;
+transform-origin: left;
+border-radius: 50px;
+
+    }
+    &:hover{
+
+        .bg1text{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        &::before{
+            width: 100%;
+            transform: scaleX(1);
+            z-index: -2;
+          
+        }
+        
+    }
+}
+
+.fixed{
+    position: fixed;
+    z-index: 7;
+    background: linear-gradient(to right, $bg31 45%, $bg32 80%) ;
+    padding: 1rem;
+ transition: all 1s;
+ transform-origin: left;
+ transform: scaleX(1);
+ box-shadow: #8a1449 1px 3px 8px; 
+
+    &:hover{
+        box-shadow: #14728a 1px 3px 8px; 
+      transform: scaleX(1.3);
+        #sidenav{
+            position: relative;
+            
+            .navitem{
+                span{
+                    display:initial;
+                    text-decoration: none;
+                }
+            }
+        
+       
+    }
+}
+    #sidenav{
+        position: relative;
+        .navitem{
+            span{
+                display: none;
+            }
+        }
+    }
+
+       
+    }
+
+.overview{
+    margin-left: 4.5rem;
+    img{
+        height: 13rem;
+    }
+}
+//home
+.bg-shadow-red{
+    position: relative;
+    background-color: $bg31;
+    text-align: left;
+    color:$bg12;
+    border: $bg11 3px solid;
+    border-radius: 25px;
+    border-top-left-radius: 0px;
+    box-shadow: #8a1449 1px 3px 8px;
+    transition: all 0.4s;
+    &:hover{
+        img{
+            transition: all 1s;
+            transform: rotate(-27deg);
+            &:hover{
+                transform: scale(2);
+                z-index: 2;
+               
+            }
+        }
+    }
+}
+////bg1-attachment
+.bg1-attached{
+    background:linear-gradient(to right, $bgattachment1 45%, $bgattachment2 80%), url(../img/hotel5.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    #btn{
+        position: relative;
+        background: none;
+        border: white 2px solid;
+      border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0;
+    &::before{
+        border-radius: 2px;
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 2s;
+      z-index: -2;
+    }
+    &:hover::before,&:focus{
+
+        transform: scaleX(1);
+        box-shadow: yellow 0px 3px 8px 2px ;
+        background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+        width: 100%;
+     
+    }
+    }
+}
+///services
+.border-primary{
+    border-width: 3px;
+}
+#Services,#Reviews,#Contact,#Teaming{
+    width: 80%;
+}
+#ser{.card{
+    position: relative;
+    z-index: 0;
+    transition: all 1s;
+       &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all 1s;
+        background:linear-gradient(to top right, rgb(46, 0, 131) 45%,rgb(92, 1, 87)90%);
+        z-index: -1;
+       }
+       &:hover{
+        h4,p{
+            color: white;
+        }
+        &::before{
+            width: 100%;
+            transform: scaleY(1);
+        }
+       }
+
+    
+}
+
+}
+#join{
+    background:linear-gradient(to right,  rgb(20, 240, 148)30%,rgb(238, 59, 143)59%,rgb(8, 5, 211)80%);
+    padding: 1rem 3.5rem;
+    border-radius: 8px;
+    position: relative;
+    z-index: 0;
+    transition: all 1s;
+    &::before{
+        position: absolute;
+        content: "";
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 1s;
+        background:linear-gradient(to right,  rgb(20, 214, 240)30%,rgb(92, 59, 238)59%,rgb(190, 211, 5)80%);
+        z-index: -1;
+}
+&:hover::before{
+    transform: scaleX(1);
+}
+}
+#join{
+    .card{
+   
+    position: relative;
+    z-index: 0;
+    transition: all 1s;
+    &::before{
+        position: absolute;
+        content: "";
+      
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 1s;
+        background:linear-gradient(to right, rgb(125, 80, 248) 35%,rgb(160, 0, 147)90%);
+        z-index: -1;
+}
+&:hover{
+    color: goldenrod;
+}
+&:hover::before{
+    transform: scaleX(1);
+}}
+}
+
+.bg2-attached{
+    background:linear-gradient(to right, $bgattachment3 45%, $bgattachment4 80%), url(../img/house3.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    #btn{
+        position: relative;
+        background: none;
+        border: white 2px solid;
+      border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0;
+    &::before{
+        border-radius: 2px;
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 1s;
+      z-index: -2;
+    }
+    &:hover::before,&:focus{
+
+        transform: scaleX(1);
+        box-shadow: yellow 0px 3px 8px 2px ;
+        background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+        width: 100%;
+     
+    }
+    }}
+    //Architects
+    .bg3-attached{
+        background:linear-gradient(to right, $bgattachment1 45%, $bgattachment2 80%), url(../img/new\ york.jpg);
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        #btn{
+            position: relative;
+            background: none;
+            border: white 2px solid;
+          border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0;
+        &::before{
+            border-radius: 2px;
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 1s;
+          z-index: -2;
+        }
+        &:hover::before,&:focus{
+    
+            transform: scaleX(1);
+            box-shadow: yellow 0px 3px 8px 2px ;
+            background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+            width: 100%;
+         
+        }
+        }}
+        ///reviews
+        .bg-shadow-green{
+            
+            position: relative;
+            background-color: $bggreenlight;
+            text-align: left;
+            color:$bggreen;
+            border: $bggreen 3px solid;
+            border-radius: 25px;
+            border-top-right-radius: 0px;
+            box-shadow: $bggreen 1px 3px 8px;
+            transition: all 0.4s;
+            &:hover{
+                img{
+                    transition: all 2s;
+                    transform: rotate(-19deg);
+                    &:hover{
+                        transform: scale(2);
+                        z-index: 2;
+                       
+                    }
+                }
+            }
+        }
+        .bg-shadow-blue{
+            
+            position: relative;
+            background-color: $bgbluelight;
+            text-align: left;
+            color:$bgblue;
+            border: $bgblue 3px solid;
+            border-radius: 25px;
+            border-top-left-radius: 0px;
+            box-shadow: $bgblue 1px 3px 8px;
+            transition: all 0.4s;
+            &:hover{
+                img{
+                    transition: all 2s;
+                    transform: rotate(-19deg);
+                    &:hover{
+                        transform: scale(2);
+                        z-index: 2;
+                       
+                    }
+                }
+            }
+        }
+#link{
+color: rgb(211, 16, 123);
+text-decoration: none;
+font-family: $bodyqoutes;
+text-shadow: $bg3 3px 1px 5px;
+transition: all;
+border-bottom: 2px rgb(211, 16, 123) solid;
+&:hover,&:focus{
+    text-shadow: $bg3 3px 1px 5px;
+animation-name: pulse;
+animation-timing-function: ease-in;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+}
+@keyframes pulse{
+    0%{
+        font-size: 16px;
+    }
+    50%{
+        font-size: 1.3rem;
+    }
+    100%{
+        font-size: 16px;
+    }
+}
+.img-reviewers{
+    img{
+        position: relative;
+        width: 3rem;
+        height: 3rem;
+        margin: 0;
+        padding: 0;
+        border-radius: 50%;
+        transition: all 1s;
+        z-index: 0;
+        &:hover{
+           
+           transform: scale(1.5);
+           z-index: 1;
+          
+        }
+    }
+    :nth-child(n+1){
+        margin-left: -1rem;
+       
+    }
+}
+.bg4-attached{
+    background:linear-gradient(to right, $bgattachment3 45%, $bgattachment4 80%), url(../img/hotel3.jpg);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    #btn{
+        position: relative;
+        background: none;
+        border: white 2px solid;
+      border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0;
+    &::before{
+        border-radius: 2px;
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 2s;
+      z-index: -2;
+    }
+    &:hover::before,&:focus{
+
+        transform: scaleX(1);
+        box-shadow: yellow 0px 3px 8px 2px ;
+        background:linear-gradient(to right,rgb(165, 0, 206) 5%, rgb(206, 0, 103) 25%,rgb(1, 201, 201)80%,rgb(224, 221, 9)95%);
+        width: 100%;
+     
+    }
+    }}
+    ///contact
+    .in{
+       background: linear-gradient(to right,rgb(223, 157, 240) 5%, rgb(236, 132, 184) 25%,rgb(164, 243, 243)60%,rgb(236, 235, 162)85%);
+       
+    }
+///fixing links
+#pk{
+    position: relative;
+    z-index: 7;
+}
+.pk{
+  
+    top: 0;
+    right:0;
+    justify-content: space-evenly;
+    padding: 20rem 0;
+    .bl{
+
+        background-color: rgb(255, 183, 101);
+        padding: 0 0.7rem;
+        position: relative;
+        z-index: 10;
+
+    &::before{
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(108, 226, 255);
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.6s;
+    
+
+    }
+     
+    
+          &:hover::before{
+            transform: scaleX(1);
+          
+            z-index: -1;
+          }
+          &:focus{
+            background-color: rgb(108, 226, 255);  
+          }
+      
+        
+    a{
+        margin-right: -0.3rem;
+        text-decoration: none;
+        font-family: $bodyqoutes;
+        padding: 2rem 0.6rem;
+        color: $bg3;
+        transform:translateX(-2rem);
+     
+    
+      
+    }}
+}
+.overview1{
+    margin-left: 3rem;
+}
+  .bg-footer{
+  
+      background:linear-gradient(to left, rgb(116, 0, 77) 5%,rgb(0, 58, 134)50%,rgb(134, 98, 0)90%);
+  }
+//scroll
+/* width */
+::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+   background :linear-gradient(to top, rgb(248, 83, 199) 5%,rgb(67, 247, 202)20%,rgb(113, 89, 250)50%,yellow 75%);
+ 
+    border-radius: 0px;
+    &:hover{
+        box-shadow: crimson 1px 4px 16px 4px;
+    }
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:linear-gradient(to top, rgb(253, 4, 170) 5%,rgb(3, 108, 245)50%,rgb(247, 182, 5)90%);
+ 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      box-shadow: rgb(220, 20, 160) 1px 22px 67px 20px;
+    background:linear-gradient(to top, rgb(179, 1, 119) 5%,rgb(5, 99, 221)50%,rgb(194, 143, 4)90%);
+ 
+  }
+@media (max-width:1370px){
+    .overview{
+        margin-left: 0;
+       #imgs{
+           justify-content: center;
+       }
+        #img1,#img2,#img3,#img4{
+            height: 12rem;
+        width: 45rem;
+        }
+      
+    }
+}
+@media (max-width:1070px){
+    .overview{
+        margin-left: 0;
+       #imgs{
+           justify-content: center;
+       }
+        #img1,#img2,#img3{
+            height: 12rem;
+        width: 45rem;
+        }
+        #img4{
+            display: none;
+        }
+      
+    }
+}
+  @media (max-width:800px){
+    body{
+        font-size: 120%;
+        .bodyquotes{
+            font-family: $bodyqoutes;
+            font-size: 70%;
+        }
+        .logotext{
+            font-family: $logo;
+            font-size: 1.5rem;
+        }
+        .heading{
+            font-family: $heading;
+            font-size: 4rem;
+        }
+        .btext{
+            font-family: $bodytext;
+            font-size: 12px;
+        }
+        .subheading{
+            font-family: $subheading;
+            letter-spacing: 4px;
+        }
+        .overview{
+            margin-left: 0;
+        }
+        #img1,#img2,#img3{
+            height: 11rem;
+        }
+        #img4{
+            display: none;
+        }
+        .img-fluid{
+            height:7rem;
+        }
+        #Services,#Reviews,#Contact,#Teaming{
+            width: 70%;
+        }
+        #Reviews,#Contact,#Teaming{
+            .img-fluid{
+                height: 4rem;
+                transform: scale(2,3.5);
+                padding-bottom: 2rem;
+            }
+        }
+    }
+  }
+  @media (max-width:740px){
+    body{
+
+        font-size: 70%;
+        .bodyquotes{
+            font-family: $bodyqoutes;
+            font-size: 50%;
+        }
+        .logotext{
+            font-family: $logo;
+            font-size: 1rem;
+        }
+        .heading{
+            font-family: $heading;
+            font-size: 2rem;
+        }
+        .btext{
+            font-family: $bodytext;
+            font-size: 10px;
+        }
+        .subheading{
+            font-family: $subheading;
+            letter-spacing: 3px;
+        }
+        .overview{
+            margin-left: 0;
+        }
+        #img1{
+            width: 100%;
+            height: 17rem;
+        }
+        #img4,#img3,#img2{
+            display: none;
+        }
+       .img-fluid{
+            height:7rem;
+        }
+        #Services,#Reviews,#Contact{
+            width: 80%;
+        }
+        #Reviews,#Contact,#Teaming{
+            .img-fluid{
+                height: 4rem;
+                transform: scale(2,3);
+                padding-bottom: 2rem;
+            }
+        }
+        #pk{
+            margin-top: 4rem;
+        }
+    }
+  }
+  @media (max-width:450px){
+    body{
+        font-size: 70%;
+        .bodyquotes{
+            font-family: $bodyqoutes;
+         
+        }
+        .logotext{
+            font-family: $logo;
+            font-size: 1rem;
+        }
+        .heading{
+            font-family: $heading;
+            font-size: 2rem;
+        }
+        .btext{
+            font-family: $bodytext;
+            font-size: 10px;
+        }
+        .subheading{
+            font-family: $subheading;
+            letter-spacing: 3px;
+        }
+        .overview{
+            margin-left: 0;
+        }
+        #img1{
+            width: 100%;
+            height: 17rem;
+        }
+        #img4,#img3,#img2{
+            display: none;
+        }
+       .img-fluid{
+            height:7rem;
+        }
+        #Services,#Reviews,#Contact,#Teaming{
+            width: 15rem;
+        }
+        .bg3-attached {
+            .my{
+                margin-left: 2rem;
+                width: 13rem;
+            }
+        }
+        #join{
+            width: 15rem;
+            padding: 1rem;
+            .bg3text{
+                font-size: 0.6rem;
+                .fa{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+        #Reviews,#Contact,#Teaming{
+            .img-fluid{
+                height: 4rem;
+                transform: scale(6,3);
+                padding-bottom: 2rem;
+            }
+        }
+        #pk{
+            margin-top: 8rem;
+        }
+    }
+  }
+  html{
+      scroll-behavior: smooth;
+  }
+  #j{
+      position: relative;
+      z-index:0;
+      &:focus
+      {
+          position:relative;
+        z-index: -2;
+      }
+  }
+#naving{
+    position: absolute;
+    z-index:67;
+}

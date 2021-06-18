@@ -1,0 +1,1305 @@
+@media print {
+  @page {
+    body{
+      user-select: none !important;
+      overflow-x: hidden; }
+
+    .bodyquotes {
+      font-family: "Yatra One", cursive; }
+
+    .logo {
+      font-family: "Monoton", cursive; }
+
+    .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 5rem; }
+
+    .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 18px; }
+
+    .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 6px; }
+
+    .bg1 {
+      background-color: crimson; }
+      .bg1text {
+        color: crimson; }
+      .bg1 .-btn {
+        background-color: crimson;
+        color: white; }
+        .bg1 .-btn:hover {
+          opacity: 0.9; }
+
+    .bg2 {
+      background-color: #6574bf; }
+      .bg2text {
+        color: #6574bf; }
+      .bg2 .-btn {
+        background-color: #6574bf;
+        color: white; }
+        .bg2 .-btn:hover {
+          opacity: 0.9; }
+
+    .bg3 {
+      background-color: #ad0675; }
+      .bg3text {
+        color: #ad0675; }
+      .bg3 .-btn {
+        background-color: #ad0675;
+        color: white; }
+        .bg3 .-btn:hover {
+          opacity: 0.9; }
+
+    .border-bg3 {
+      border: 3px solid #ad0675 !important; }
+
+    .bg4 {
+      background-color: #ec5519; }
+      .bg4text {
+        color: #ec5519; }
+      .bg4 .-btn {
+        background-color: #ec5519;
+        color: white; }
+        .bg4 .-btn:hover {
+          opacity: 0.9; }
+
+    .bgnav1 {
+      background: linear-gradient(#295dfa 25%, #4473ff 50%);
+      transition: all 2s;
+      transform: scaleX(1);
+      transform-origin: left; }
+      .bgnav1:hover {
+        opacity: 0.95;
+        transform: scaleX(2); }
+        .bgnav1:hover span {
+          display: block; }
+
+    #nav {
+      margin: 0;
+      padding: 0;
+      position: relative; }
+
+    .navbg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      background: linear-gradient(to right, #ff004c 45%, #0054b3 80%);
+      font-size: 2rem;
+      box-shadow: #14558a 1px 2px 8px; }
+      .navbg a {
+        text-decoration: none;
+        color: #affff8;
+        font-family: "Monoton", cursive; }
+
+    .user img {
+      width: 5rem !important; }
+
+    #one {
+      position: relative; }
+
+    #k {
+      border-radius: 4px;
+      position: relative;
+      text-decoration: none;
+      transition: all 0.5s; }
+      #k:hover {
+        padding: 2rem; }
+      #k:focus {
+        background: linear-gradient(to right, #850073 25%, #b90483 50%); }
+      #k::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 3%;
+        height: 100%;
+        transform: scaleX(0);
+        background: linear-gradient(to right, #850073 25%, #b90483 50%);
+        box-shadow: #888aff 0px 1px 14px 7px;
+        transition: all 1s;
+        transform-origin: left;
+        border-radius: 50px; }
+      #k:hover .bg1text {
+        text-decoration: none;
+        color: white; }
+      #k:hover::before {
+        width: 100%;
+        transform: scaleX(1);
+        z-index: -2; }
+
+    .fixed {
+      position: fixed;
+      z-index: 7;
+      background: linear-gradient(to right, #f7b7b7 45%, #ffe6af 80%);
+      padding: 1rem;
+      transition: all 1s;
+      transform-origin: left;
+      transform: scaleX(1);
+      box-shadow: #8a1449 1px 3px 8px; }
+      .fixed:hover {
+        box-shadow: #14728a 1px 3px 8px;
+        transform: scaleX(1.3); }
+        .fixed:hover #sidenav {
+          position: relative; }
+          .fixed:hover #sidenav .navitem span {
+            display: initial;
+            text-decoration: none; }
+      .fixed #sidenav {
+        position: relative; }
+        .fixed #sidenav .navitem span {
+          display: none; }
+
+    .overview {
+      margin-left: 4.5rem; }
+      .overview img {
+        height: 13rem; }
+
+    .bg-shadow-red {
+      position: relative;
+      background-color: #f7b7b7;
+      text-align: left;
+      color: crimson;
+      border: #ff004c 3px solid;
+      border-radius: 25px;
+      border-top-left-radius: 0px;
+      box-shadow: #8a1449 1px 3px 8px;
+      transition: all 0.4s; }
+      .bg-shadow-red:hover img {
+        transition: all 1s;
+        transform: rotate(-27deg); }
+        .bg-shadow-red:hover img:hover {
+          transform: scale(2);
+          z-index: 2; }
+
+    .bg1-attached {
+      background: linear-gradient(to right, rgba(44, 0, 38, 0.9) 45%, rgba(3, 3, 46, 0.75) 80%), url(../img/hotel5.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .bg1-attached #btn {
+        position: relative;
+        background: none;
+        border: white 2px solid;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0; }
+        .bg1-attached #btn::before {
+          border-radius: 2px;
+          position: absolute;
+          content: " ";
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: all 2s;
+          z-index: -2; }
+        .bg1-attached #btn:hover::before, .bg1-attached #btn:focus {
+          transform: scaleX(1);
+          box-shadow: yellow 0px 3px 8px 2px;
+          background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+          width: 100%; }
+
+    .border-primary {
+      border-width: 3px; }
+
+    #Services, #Reviews, #Contact, #Teaming {
+      width: 80%; }
+
+    #ser .card {
+      position: relative;
+      z-index: 0;
+      transition: all 1s; }
+      #ser .card::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: bottom;
+        transition: all 1s;
+        background: linear-gradient(to top right, #2e0083 45%, #5c0157 90%);
+        z-index: -1; }
+      #ser .card:hover h4, #ser .card:hover p {
+        color: white; }
+      #ser .card:hover::before {
+        width: 100%;
+        transform: scaleY(1); }
+
+    #join {
+      background: linear-gradient(to right, #14f094 30%, #ee3b8f 59%, #0805d3 80%);
+      padding: 1rem 3.5rem;
+      border-radius: 8px;
+      position: relative;
+      z-index: 0;
+      transition: all 1s; }
+      #join::before {
+        position: absolute;
+        content: "";
+        border-radius: 8px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 1s;
+        background: linear-gradient(to right, #14d6f0 30%, #5c3bee 59%, #bed305 80%);
+        z-index: -1; }
+      #join:hover::before {
+        transform: scaleX(1); }
+
+    #join .card {
+      position: relative;
+      z-index: 0;
+      transition: all 1s; }
+      #join .card::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 1s;
+        background: linear-gradient(to right, #7d50f8 35%, #a00093 90%);
+        z-index: -1; }
+      #join .card:hover {
+        color: goldenrod; }
+      #join .card:hover::before {
+        transform: scaleX(1); }
+
+    .bg2-attached {
+      background: linear-gradient(to right, rgba(1, 60, 63, 0.75) 45%, rgba(34, 3, 99, 0.75) 80%), url(../img/house3.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .bg2-attached #btn {
+        position: relative;
+        background: none;
+        border: white 2px solid;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0; }
+        .bg2-attached #btn::before {
+          border-radius: 2px;
+          position: absolute;
+          content: " ";
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: all 1s;
+          z-index: -2; }
+        .bg2-attached #btn:hover::before, .bg2-attached #btn:focus {
+          transform: scaleX(1);
+          box-shadow: yellow 0px 3px 8px 2px;
+          background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+          width: 100%; }
+
+    .bg3-attached {
+      background: linear-gradient(to right, rgba(44, 0, 38, 0.9) 45%, rgba(3, 3, 46, 0.75) 80%), url(../img/new\ york.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      .bg3-attached #btn {
+        position: relative;
+        background: none;
+        border: white 2px solid;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.5rem;
+        z-index: 0; }
+        .bg3-attached #btn::before {
+          border-radius: 2px;
+          position: absolute;
+          content: " ";
+          top: 0;
+          left: 0;
+          width: 3px;
+          height: 100%;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: all 1s;
+          z-index: -2; }
+        .bg3-attached #btn:hover::before, .bg3-attached #btn:focus {
+          transform: scaleX(1);
+          box-shadow: yellow 0px 3px 8px 2px;
+          background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+          width: 100%; }
+
+    .bg-shadow-green {
+      position: relative;
+      background-color: #73ffc9;
+      text-align: left;
+      color: #008060;
+      border: #008060 3px solid;
+      border-radius: 25px;
+      border-top-right-radius: 0px;
+      box-shadow: #008060 1px 3px 8px;
+      transition: all 0.4s; }
+      .bg-shadow-green:hover img {
+        transition: all 2s;
+        transform: rotate(-19deg); }
+        .bg-shadow-green:hover img:hover {
+          transform: scale(2);
+          z-index: 2; }
+
+    .bg-shadow-blue {
+      position: relative;
+      background-color: #8f8fff;
+      text-align: left;
+      color: #0404a8;
+      border: #0404a8 3px solid;
+      border-radius: 25px;
+      border-top-left-radius: 0px;
+      box-shadow: #0404a8 1px 3px 8px;
+      transition: all 0.4s; }
+      .bg-shadow-blue:hover img {
+        transition: all 2s;
+        transform: rotate(-19deg); }
+        .bg-shadow-blue:hover img:hover {
+          transform: scale(2);
+          z-index: 2; }
+
+    #link {
+      color: #d3107b;
+      text-decoration: none;
+      font-family: "Yatra One", cursive;
+      text-shadow: #ad0675 3px 1px 5px;
+      transition: all;
+      border-bottom: 2px #d3107b solid; }
+      #link:hover, #link:focus {
+        text-shadow: #ad0675 3px 1px 5px;
+        animation-name: pulse;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; } }
+  @keyframes pulse {
+    0% {
+      font-size: 16px; }
+    50% {
+      font-size: 1.3rem; }
+    100% {
+      font-size: 16px; } }
+  .img-reviewers img {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    transition: all 1s;
+    z-index: 0; }
+    .img-reviewers img:hover {
+      transform: scale(1.5);
+      z-index: 1; }
+  .img-reviewers :nth-child(n+1) {
+    margin-left: -1rem; }
+
+  .bg4-attached {
+    background: linear-gradient(to right, rgba(1, 60, 63, 0.75) 45%, rgba(34, 3, 99, 0.75) 80%), url(../img/hotel3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .bg4-attached #btn {
+      position: relative;
+      background: none;
+      border: white 2px solid;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.5rem;
+      z-index: 0; }
+      .bg4-attached #btn::before {
+        border-radius: 2px;
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 2s;
+        z-index: -2; }
+      .bg4-attached #btn:hover::before, .bg4-attached #btn:focus {
+        transform: scaleX(1);
+        box-shadow: yellow 0px 3px 8px 2px;
+        background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+        width: 100%; }
+
+  .in {
+    background: linear-gradient(to right, #df9df0 5%, #ec84b8 25%, #a4f3f3 60%, #eceba2 85%); }
+
+  #pk {
+    position: relative;
+    z-index: 7; }
+
+  .pk {
+    top: 0;
+    right: 0;
+    justify-content: space-evenly;
+    padding: 20rem 0; }
+    .pk .bl {
+      background-color: #ffb765;
+      padding: 0 0.7rem;
+      position: relative;
+      z-index: 10; }
+      .pk .bl::before {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #6ce2ff;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.6s; }
+      .pk .bl:hover::before {
+        transform: scaleX(1);
+        z-index: -1; }
+      .pk .bl:focus {
+        background-color: #6ce2ff; }
+      .pk .bl a {
+        margin-right: -0.3rem;
+        text-decoration: none;
+        font-family: "Yatra One", cursive;
+        padding: 2rem 0.6rem;
+        color: #ad0675;
+        transform: translateX(-2rem); }
+
+  .overview1 {
+    margin-left: 3rem; }
+
+  .bg-footer {
+    background: linear-gradient(to left, #74004d 5%, #003a86 50%, #866200 90%); }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 17px; }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(to top, #f853c7 5%, #43f7ca 20%, #7159fa 50%, yellow 75%);
+    border-radius: 0px; }
+    ::-webkit-scrollbar-track:hover {
+      box-shadow: crimson 1px 4px 16px 4px; }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to top, #fd04aa 5%, #036cf5 50%, #f7b605 90%);
+    border-radius: 10px; }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: #dc14a0 1px 22px 67px 20px;
+    background: linear-gradient(to top, #b30177 5%, #0563dd 50%, #c28f04 90%); } }
+@media print and (max-width: 1370px) {
+  .overview {
+    margin-left: 0; }
+    .overview #imgs {
+      justify-content: center; }
+    .overview #img1, .overview #img2, .overview #img3, .overview #img4 {
+      height: 12rem;
+      width: 45rem; } }
+@media print and (max-width: 1070px) {
+  .overview {
+    margin-left: 0; }
+    .overview #imgs {
+      justify-content: center; }
+    .overview #img1, .overview #img2, .overview #img3 {
+      height: 12rem;
+      width: 45rem; }
+    .overview #img4 {
+      display: none; } }
+@media print and (max-width: 800px) {
+  body {
+    font-size: 120%; }
+    body .bodyquotes {
+      font-family: "Yatra One", cursive;
+      font-size: 70%; }
+    body .logotext {
+      font-family: "Monoton", cursive;
+      font-size: 1.5rem; }
+    body .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 4rem; }
+    body .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 12px; }
+    body .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 4px; }
+    body .overview {
+      margin-left: 0; }
+    body #img1, body #img2, body #img3 {
+      height: 11rem; }
+    body #img4 {
+      display: none; }
+    body .img-fluid {
+      height: 7rem; }
+    body #Services, body #Reviews, body #Contact, body #Teaming {
+      width: 70%; }
+    body #Reviews .img-fluid, body #Contact .img-fluid, body #Teaming .img-fluid {
+      height: 4rem;
+      transform: scale(2, 3.5);
+      padding-bottom: 2rem; } }
+@media print and (max-width: 740px) {
+  body {
+    font-size: 70%; }
+    body .bodyquotes {
+      font-family: "Yatra One", cursive;
+      font-size: 50%; }
+    body .logotext {
+      font-family: "Monoton", cursive;
+      font-size: 1rem; }
+    body .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 2rem; }
+    body .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 10px; }
+    body .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 3px; }
+    body .overview {
+      margin-left: 0; }
+    body #img1 {
+      width: 100%;
+      height: 17rem; }
+    body #img4, body #img3, body #img2 {
+      display: none; }
+    body .img-fluid {
+      height: 7rem; }
+    body #Services, body #Reviews, body #Contact {
+      width: 80%; }
+    body #Reviews .img-fluid, body #Contact .img-fluid, body #Teaming .img-fluid {
+      height: 4rem;
+      transform: scale(2, 3);
+      padding-bottom: 2rem; }
+    body #pk {
+      margin-top: 4rem; } }
+@media print and (max-width: 450px) {
+  body {
+    font-size: 70%; }
+    body .bodyquotes {
+      font-family: "Yatra One", cursive; }
+    body .logotext {
+      font-family: "Monoton", cursive;
+      font-size: 1rem; }
+    body .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 2rem; }
+    body .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 10px; }
+    body .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 3px; }
+    body .overview {
+      margin-left: 0; }
+    body #img1 {
+      width: 100%;
+      height: 17rem; }
+    body #img4, body #img3, body #img2 {
+      display: none; }
+    body .img-fluid {
+      height: 7rem; }
+    body #Services, body #Reviews, body #Contact, body #Teaming {
+      width: 15rem; }
+    body .bg3-attached .my {
+      margin-left: 2rem;
+      width: 13rem; }
+    body #join {
+      width: 15rem;
+      padding: 1rem; }
+      body #join .bg3text {
+        font-size: 0.6rem; }
+        body #join .bg3text .fa {
+          font-size: 0.6rem; }
+    body #Reviews .img-fluid, body #Contact .img-fluid, body #Teaming .img-fluid {
+      height: 4rem;
+      transform: scale(6, 3);
+      padding-bottom: 2rem; }
+    body #pk {
+      margin-top: 8rem; } }
+@media print {
+  html {
+    scroll-behavior: smooth; }
+
+  #j {
+    position: relative;
+    z-index: 0; }
+    #j:focus {
+      position: relative;
+      z-index: -2; }
+
+  #naving {
+    position: absolute;
+    z-index: 67; } }
+body {
+  user-select: none !important;
+  overflow-x: hidden; }
+
+.bodyquotes {
+  font-family: "Yatra One", cursive; }
+
+.logo {
+  font-family: "Monoton", cursive; }
+
+.heading {
+  font-family: "Bungee Inline", cursive;
+  font-size: 5rem; }
+
+.btext {
+  font-family: "Marcellus SC", serif;
+  font-size: 18px; }
+
+.subheading {
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 6px; }
+
+.bg1 {
+  background-color: crimson; }
+  .bg1text {
+    color: crimson; }
+  .bg1 .-btn {
+    background-color: crimson;
+    color: white; }
+    .bg1 .-btn:hover {
+      opacity: 0.9; }
+
+.bg2 {
+  background-color: #6574bf; }
+  .bg2text {
+    color: #6574bf; }
+  .bg2 .-btn {
+    background-color: #6574bf;
+    color: white; }
+    .bg2 .-btn:hover {
+      opacity: 0.9; }
+
+.bg3 {
+  background-color: #ad0675; }
+  .bg3text {
+    color: #ad0675; }
+  .bg3 .-btn {
+    background-color: #ad0675;
+    color: white; }
+    .bg3 .-btn:hover {
+      opacity: 0.9; }
+
+.border-bg3 {
+  border: 3px solid #ad0675 !important; }
+
+.bg4 {
+  background-color: #ec5519; }
+  .bg4text {
+    color: #ec5519; }
+  .bg4 .-btn {
+    background-color: #ec5519;
+    color: white; }
+    .bg4 .-btn:hover {
+      opacity: 0.9; }
+
+.bgnav1 {
+  background: linear-gradient(#295dfa 25%, #4473ff 50%);
+  transition: all 2s;
+  transform: scaleX(1);
+  transform-origin: left; }
+  .bgnav1:hover {
+    opacity: 0.95;
+    transform: scaleX(2); }
+    .bgnav1:hover span {
+      display: block; }
+
+#nav {
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+.navbg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  background: linear-gradient(to right, #ff004c 45%, #0054b3 80%);
+  font-size: 2rem;
+  box-shadow: #14558a 1px 2px 8px; }
+  .navbg a {
+    text-decoration: none;
+    color: #affff8;
+    font-family: "Monoton", cursive; }
+
+.user img {
+  width: 5rem !important; }
+
+#one {
+  position: relative; }
+
+#k {
+  border-radius: 4px;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.5s; }
+  #k:hover {
+    padding: 2rem; }
+  #k:focus {
+    background: linear-gradient(to right, #850073 25%, #b90483 50%); }
+  #k::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 3%;
+    height: 100%;
+    transform: scaleX(0);
+    background: linear-gradient(to right, #850073 25%, #b90483 50%);
+    box-shadow: #888aff 0px 1px 14px 7px;
+    transition: all 1s;
+    transform-origin: left;
+    border-radius: 50px; }
+  #k:hover .bg1text {
+    text-decoration: none;
+    color: white; }
+  #k:hover::before {
+    width: 100%;
+    transform: scaleX(1);
+    z-index: -2; }
+
+.fixed {
+  position: fixed;
+  z-index: 7;
+  background: linear-gradient(to right, #f7b7b7 45%, #ffe6af 80%);
+  padding: 1rem;
+  transition: all 1s;
+  transform-origin: left;
+  transform: scaleX(1);
+  box-shadow: #8a1449 1px 3px 8px; }
+  .fixed:hover {
+    box-shadow: #14728a 1px 3px 8px;
+    transform: scaleX(1.3); }
+    .fixed:hover #sidenav {
+      position: relative; }
+      .fixed:hover #sidenav .navitem span {
+        display: initial;
+        text-decoration: none; }
+  .fixed #sidenav {
+    position: relative; }
+    .fixed #sidenav .navitem span {
+      display: none; }
+
+.overview {
+  margin-left: 4.5rem; }
+  .overview img {
+    height: 13rem; }
+
+.bg-shadow-red {
+  position: relative;
+  background-color: #f7b7b7;
+  text-align: left;
+  color: crimson;
+  border: #ff004c 3px solid;
+  border-radius: 25px;
+  border-top-left-radius: 0px;
+  box-shadow: #8a1449 1px 3px 8px;
+  transition: all 0.4s; }
+  .bg-shadow-red:hover img {
+    transition: all 1s;
+    transform: rotate(-27deg); }
+    .bg-shadow-red:hover img:hover {
+      transform: scale(2);
+      z-index: 2; }
+
+.bg1-attached {
+  background: linear-gradient(to right, rgba(44, 0, 38, 0.9) 45%, rgba(3, 3, 46, 0.75) 80%), url(../img/hotel5.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bg1-attached #btn {
+    position: relative;
+    background: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0; }
+    .bg1-attached #btn::before {
+      border-radius: 2px;
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 2s;
+      z-index: -2; }
+    .bg1-attached #btn:hover::before, .bg1-attached #btn:focus {
+      transform: scaleX(1);
+      box-shadow: yellow 0px 3px 8px 2px;
+      background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+      width: 100%; }
+
+.border-primary {
+  border-width: 3px; }
+
+#Services, #Reviews, #Contact, #Teaming {
+  width: 80%; }
+
+#ser .card {
+  position: relative;
+  z-index: 0;
+  transition: all 1s; }
+  #ser .card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all 1s;
+    background: linear-gradient(to top right, #2e0083 45%, #5c0157 90%);
+    z-index: -1; }
+  #ser .card:hover h4, #ser .card:hover p {
+    color: white; }
+  #ser .card:hover::before {
+    width: 100%;
+    transform: scaleY(1); }
+
+#join {
+  background: linear-gradient(to right, #14f094 30%, #ee3b8f 59%, #0805d3 80%);
+  padding: 1rem 3.5rem;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+  transition: all 1s; }
+  #join::before {
+    position: absolute;
+    content: "";
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: all 1s;
+    background: linear-gradient(to right, #14d6f0 30%, #5c3bee 59%, #bed305 80%);
+    z-index: -1; }
+  #join:hover::before {
+    transform: scaleX(1); }
+
+#join .card {
+  position: relative;
+  z-index: 0;
+  transition: all 1s; }
+  #join .card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    background: linear-gradient(to right, #7d50f8 35%, #a00093 90%);
+    z-index: -1; }
+  #join .card:hover {
+    color: goldenrod; }
+  #join .card:hover::before {
+    transform: scaleX(1); }
+
+.bg2-attached {
+  background: linear-gradient(to right, rgba(1, 60, 63, 0.75) 45%, rgba(34, 3, 99, 0.75) 80%), url(../img/house3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bg2-attached #btn {
+    position: relative;
+    background: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0; }
+    .bg2-attached #btn::before {
+      border-radius: 2px;
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 1s;
+      z-index: -2; }
+    .bg2-attached #btn:hover::before, .bg2-attached #btn:focus {
+      transform: scaleX(1);
+      box-shadow: yellow 0px 3px 8px 2px;
+      background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+      width: 100%; }
+
+.bg3-attached {
+  background: linear-gradient(to right, rgba(44, 0, 38, 0.9) 45%, rgba(3, 3, 46, 0.75) 80%), url(../img/new\ york.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bg3-attached #btn {
+    position: relative;
+    background: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0; }
+    .bg3-attached #btn::before {
+      border-radius: 2px;
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 1s;
+      z-index: -2; }
+    .bg3-attached #btn:hover::before, .bg3-attached #btn:focus {
+      transform: scaleX(1);
+      box-shadow: yellow 0px 3px 8px 2px;
+      background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+      width: 100%; }
+
+.bg-shadow-green {
+  position: relative;
+  background-color: #73ffc9;
+  text-align: left;
+  color: #008060;
+  border: #008060 3px solid;
+  border-radius: 25px;
+  border-top-right-radius: 0px;
+  box-shadow: #008060 1px 3px 8px;
+  transition: all 0.4s; }
+  .bg-shadow-green:hover img {
+    transition: all 2s;
+    transform: rotate(-19deg); }
+    .bg-shadow-green:hover img:hover {
+      transform: scale(2);
+      z-index: 2; }
+
+.bg-shadow-blue {
+  position: relative;
+  background-color: #8f8fff;
+  text-align: left;
+  color: #0404a8;
+  border: #0404a8 3px solid;
+  border-radius: 25px;
+  border-top-left-radius: 0px;
+  box-shadow: #0404a8 1px 3px 8px;
+  transition: all 0.4s; }
+  .bg-shadow-blue:hover img {
+    transition: all 2s;
+    transform: rotate(-19deg); }
+    .bg-shadow-blue:hover img:hover {
+      transform: scale(2);
+      z-index: 2; }
+
+#link {
+  color: #d3107b;
+  text-decoration: none;
+  font-family: "Yatra One", cursive;
+  text-shadow: #ad0675 3px 1px 5px;
+  transition: all;
+  border-bottom: 2px #d3107b solid; }
+  #link:hover, #link:focus {
+    text-shadow: #ad0675 3px 1px 5px;
+    animation-name: pulse;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+
+@keyframes pulse {
+  0% {
+    font-size: 16px; }
+  50% {
+    font-size: 1.3rem; }
+  100% {
+    font-size: 16px; } }
+.img-reviewers img {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 0; }
+  .img-reviewers img:hover {
+    transform: scale(1.5);
+    z-index: 1; }
+.img-reviewers :nth-child(n+1) {
+  margin-left: -1rem; }
+
+.bg4-attached {
+  background: linear-gradient(to right, rgba(1, 60, 63, 0.75) 45%, rgba(34, 3, 99, 0.75) 80%), url(../img/hotel3.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .bg4-attached #btn {
+    position: relative;
+    background: none;
+    border: white 2px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 0; }
+    .bg4-attached #btn::before {
+      border-radius: 2px;
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: all 2s;
+      z-index: -2; }
+    .bg4-attached #btn:hover::before, .bg4-attached #btn:focus {
+      transform: scaleX(1);
+      box-shadow: yellow 0px 3px 8px 2px;
+      background: linear-gradient(to right, #a500ce 5%, #ce0067 25%, #01c9c9 80%, #e0dd09 95%);
+      width: 100%; }
+
+.in {
+  background: linear-gradient(to right, #df9df0 5%, #ec84b8 25%, #a4f3f3 60%, #eceba2 85%); }
+
+#pk {
+  position: relative;
+  z-index: 7; }
+
+.pk {
+  top: 0;
+  right: 0;
+  justify-content: space-evenly;
+  padding: 20rem 0; }
+  .pk .bl {
+    background-color: #ffb765;
+    padding: 0 0.7rem;
+    position: relative;
+    z-index: 10; }
+    .pk .bl::before {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #6ce2ff;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: all 0.6s; }
+    .pk .bl:hover::before {
+      transform: scaleX(1);
+      z-index: -1; }
+    .pk .bl:focus {
+      background-color: #6ce2ff; }
+    .pk .bl a {
+      margin-right: -0.3rem;
+      text-decoration: none;
+      font-family: "Yatra One", cursive;
+      padding: 2rem 0.6rem;
+      color: #ad0675;
+      transform: translateX(-2rem); }
+
+.overview1 {
+  margin-left: 3rem; }
+
+.bg-footer {
+  background: linear-gradient(to left, #74004d 5%, #003a86 50%, #866200 90%); }
+
+/* width */
+::-webkit-scrollbar {
+  width: 17px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to top, #f853c7 5%, #43f7ca 20%, #7159fa 50%, yellow 75%);
+  border-radius: 0px; }
+  ::-webkit-scrollbar-track:hover {
+    box-shadow: crimson 1px 4px 16px 4px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, #fd04aa 5%, #036cf5 50%, #f7b605 90%);
+  border-radius: 10px; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: #dc14a0 1px 22px 67px 20px;
+  background: linear-gradient(to top, #b30177 5%, #0563dd 50%, #c28f04 90%); }
+
+@media (max-width: 1370px) {
+  .overview {
+    margin-left: 0; }
+    .overview #imgs {
+      justify-content: center; }
+    .overview #img1, .overview #img2, .overview #img3, .overview #img4 {
+      height: 12rem;
+      width: 45rem; } }
+@media (max-width: 1070px) {
+  .overview {
+    margin-left: 0; }
+    .overview #imgs {
+      justify-content: center; }
+    .overview #img1, .overview #img2, .overview #img3 {
+      height: 12rem;
+      width: 45rem; }
+    .overview #img4 {
+      display: none; } }
+@media (max-width: 800px) {
+  body {
+    font-size: 120%; }
+    body .bodyquotes {
+      font-family: "Yatra One", cursive;
+      font-size: 70%; }
+    body .logotext {
+      font-family: "Monoton", cursive;
+      font-size: 1.5rem; }
+    body .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 4rem; }
+    body .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 12px; }
+    body .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 4px; }
+    body .overview {
+      margin-left: 0; }
+    body #img1, body #img2, body #img3 {
+      height: 11rem; }
+    body #img4 {
+      display: none; }
+    body .img-fluid {
+      height: 7rem; }
+    body #Services, body #Reviews, body #Contact, body #Teaming {
+      width: 70%; }
+    body #Reviews .img-fluid, body #Contact .img-fluid, body #Teaming .img-fluid {
+      height: 4rem;
+      transform: scale(2, 3.5);
+      padding-bottom: 2rem; } }
+@media (max-width: 740px) {
+  body {
+    font-size: 70%; }
+    body .bodyquotes {
+      font-family: "Yatra One", cursive;
+      font-size: 50%; }
+    body .logotext {
+      font-family: "Monoton", cursive;
+      font-size: 1rem; }
+    body .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 2rem; }
+    body .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 10px; }
+    body .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 3px; }
+    body .overview {
+      margin-left: 0; }
+    body #img1 {
+      width: 100%;
+      height: 17rem; }
+    body #img4, body #img3, body #img2 {
+      display: none; }
+    body .img-fluid {
+      height: 7rem; }
+    body #Services, body #Reviews, body #Contact {
+      width: 80%; }
+    body #Reviews .img-fluid, body #Contact .img-fluid, body #Teaming .img-fluid {
+      height: 4rem;
+      transform: scale(2, 3);
+      padding-bottom: 2rem; }
+    body #pk {
+      margin-top: 4rem; } }
+@media (max-width: 450px) {
+  body {
+    font-size: 70%; }
+    body .bodyquotes {
+      font-family: "Yatra One", cursive; }
+    body .logotext {
+      font-family: "Monoton", cursive;
+      font-size: 1rem; }
+    body .heading {
+      font-family: "Bungee Inline", cursive;
+      font-size: 2rem; }
+    body .btext {
+      font-family: "Marcellus SC", serif;
+      font-size: 10px; }
+    body .subheading {
+      font-family: "Luckiest Guy", cursive;
+      letter-spacing: 3px; }
+    body .overview {
+      margin-left: 0; }
+    body #img1 {
+      width: 100%;
+      height: 17rem; }
+    body #img4, body #img3, body #img2 {
+      display: none; }
+    body .img-fluid {
+      height: 7rem; }
+    body #Services, body #Reviews, body #Contact, body #Teaming {
+      width: 15rem; }
+    body .bg3-attached .my {
+      margin-left: 2rem;
+      width: 13rem; }
+    body #join {
+      width: 15rem;
+      padding: 1rem; }
+      body #join .bg3text {
+        font-size: 0.6rem; }
+        body #join .bg3text .fa {
+          font-size: 0.6rem; }
+    body #Reviews .img-fluid, body #Contact .img-fluid, body #Teaming .img-fluid {
+      height: 4rem;
+      transform: scale(6, 3);
+      padding-bottom: 2rem; }
+    body #pk {
+      margin-top: 8rem; } }
+html {
+  scroll-behavior: smooth; }
+
+#j {
+  position: relative;
+  z-index: 0; }
+  #j:focus {
+    position: relative;
+    z-index: -2; }
+
+#naving {
+  position: absolute;
+  z-index: 67; }
+
+/*# sourceMappingURL=style.css.map */
